@@ -15,7 +15,7 @@ void loadBuku() {
     if(fp != NULL) {
         char line[200];
         while(fgets(line, sizeof(line), fp)) {
-            line[strcspn(line, "\n")] = 0; // hapus newline
+            line[strcspn(line, "\n")] = 0; 
             char *token = strtok(line, "|");
             if(token) strcpy(daftarBuku[jumlahBuku].kode, token);
 
