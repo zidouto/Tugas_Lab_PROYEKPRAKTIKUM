@@ -2,6 +2,7 @@
 #include "data.h"
 
 void viewBuku() {
+    loadBuku();
     if(jumlahBuku == 0) {
         printf("Belum ada data buku.\n");
         return;

@@ -1,34 +1,11 @@
-
+ /*
+Anggota Kelompok:
+Lantib Islami - 2902789215
+*/
 
 #include <stdio.h>
+#include "data.h"
 
-void insert_book() {
-    printf("insert book\n");
-}
-
-void view_transactions() {
-    printf("view transactions\n");
-}
-
-void view_books() {
-    printf("view books\n");
-}
-
-void delete_transaction() {
-    printf("delete transaction\n");
-}
-
-void delete_book() {
-    printf("delete book\n");
-}
-
-void exit_menu() {
-    printf("exit menu\n");
-}
-
-void insert_transaction() {
-    printf("insert transaction\n");
-}
 void sort_books(int sort_type) {
     if (sort_type == 1) {
         printf("sort books by name\n");
@@ -58,10 +35,10 @@ int main() {
                 insert_book();
                 break;
             case 2:
-                view_transactions();
+                viewBuku();
                 break;
             case 3:
-                view_books();
+                viewBuku();
                 break;
             case 4:
                 delete_transaction();
@@ -70,10 +47,10 @@ int main() {
                 delete_book();
                 break;
             case 6:
-                exit_menu();
+                saveAndExit();
                 break;
             case 7:
-                insert_transaction();
+                ;
                 break;
             case 8: {
                 int input_sort;
