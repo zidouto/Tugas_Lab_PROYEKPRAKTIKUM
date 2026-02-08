@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "data.h"
 
-void viewBuku() {
+void view_books() {
     if(jumlahBuku == 0) {
         printf("Belum ada data buku.\n");
         return;

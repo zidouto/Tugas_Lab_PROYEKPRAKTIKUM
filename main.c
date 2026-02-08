@@ -1,6 +1,5 @@
-
-
 #include <stdio.h>
+#include "data.h"
 
 void insert_book() {
     printf("insert book\n");
@@ -10,9 +9,7 @@ void view_transactions() {
     printf("view transactions\n");
 }
 
-void view_books() {
-    printf("view books\n");
-}
+void view_books();
 
 void delete_transaction() {
     printf("delete transaction\n");
@@ -22,9 +19,7 @@ void delete_book() {
     printf("delete book\n");
 }
 
-void exit_menu() {
-    printf("exit menu\n");
-}
+void exit_menu();
 
 void insert_transaction() {
     printf("insert transaction\n");
@@ -39,6 +34,9 @@ void sort_books(int sort_type) {
 
 int main() {
     int input_menu;
+
+    loadBuku();
+    loadHistory();
 
     do {
         printf("\nPilih Menu:\n");

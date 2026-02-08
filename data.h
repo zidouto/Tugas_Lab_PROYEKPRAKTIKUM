@@ -23,4 +23,7 @@ extern int jumlahBuku;
 extern History daftarHistory[MAX_HISTORY];
 extern int jumlahHistory;
 
+void loadBuku();
+void loadHistory();
+
 #endif

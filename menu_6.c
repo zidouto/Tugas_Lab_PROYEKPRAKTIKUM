@@ -2,14 +2,16 @@
 #include <stdlib.h>
 #include "data.h"
 
-void saveAndExit() {
+void exit_menu() {
     FILE *fp = fopen("databuku.txt", "w");
+    if (!fp) return;
     for(int i = 0; i < jumlahBuku; i++)
         fprintf(fp, "%s|%s|%s|%.2lf\n", daftarBuku[i].kode, daftarBuku[i].nama,
                 daftarBuku[i].jenis, daftarBuku[i].harga);
     fclose(fp);
 
     fp = fopen("history.txt", "w");
+    if (!fp) return;
     for(int i = 0; i < jumlahHistory; i++)
         fprintf(fp, "%s|%d|%.2lf\n", daftarHistory[i].kode, daftarHistory[i].jumlah,
                 daftarHistory[i].total);
